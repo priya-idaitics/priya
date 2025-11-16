@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" type="image/x-icon" href="image/Logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+   
+  <title>Sign-Up-Form</title>
+</head>
+    <body>
+
+<div class="form-container">
+   
+    <form id="signupform" onsubmit="return validateInputs()">
+       <div class="wrap-topbar">
+              <img src="image/Logo.jpg" alt="Logo" class="wrap-img" width="40px">
+        <span><b>Create Account</b><br>join organic food culture</span> </div>
+        <br>
+    
+        <div class="google-insta">
+                <button>
+                    <span class="text-xl"> 
+                            <img src="image/Google-Symbol.png" alt="Google Logo" class="w-8 h-8" width="30px">
+           
+                    </span>
+                    <span>Sign up with Google</span>
+                </button>
+                <br><br>
+                <button>
+                    <span class="text-xl">
+                        <img src="image/Instagram-logo.png" alt="Instagram-logo" class="w-8 h-8" width="30px">
+                    </span>
+                    <span>Sign up with Instagram</span>
+                </button>
+            </div>
+
+           <span><hr>or Signup with email</span>
+<br><br>
+        <div class="form-row"> 
+            <label>Full Name</label><br>
+            <input type="text" id="userName"  placeholder="Example: John Doe" required>
+            <div class="error"></div>
+        </div>
+        <div class="form-row">
+            <label>Email Address</label><br>
+            <input type="email" id="eMail"  placeholder="your@email.com">
+            <div class="error"></div>
+        </div>
+        <div class="form-row">
+            <label>Mobile Number</label><br>
+            <input type="number" id="mobile" placeholder="+1 234 567 8900">
+            <div class="error"></div>
+        </div>
+        <div class="form-row"> 
+            <label>Password</label><br>
+           <input  type="password" id="password" placeholder="Choose a Strong Password" required />
+           <div class="error"></div>
+        </div>
+        <div class="form-row">
+            <label>Confirm Password</label><br>
+            <input type="password" id="confirm-password" placeholder="Confirm Password" required />
+           <div class="error"></div>
+        </div>
+        
+        <button type="submit" class="button1"> Signup </button>
+    </form>
+    
+</div>
+<script src="Script.js"></script>
+    </body>
+</html>
